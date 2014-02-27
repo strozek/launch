@@ -10,9 +10,9 @@ PARAMS = {
                 :stopcommand => 'kill #{PID}',  # This is not a typo. We manually interpolate
                 :startcommand => 'nohup shotgun config.ru -s thin -o 0.0.0.0 -p 80 -E development > log/shotgun.out 2>&1 &'
               },
-  :thin =>  { :pidfile => 'tmp/pids/thin.pid',
-              :logfile => 'log/thin.log',
-              :filesuffix => '',
+  :thin =>  { :pidfile => 'tmp/pids/thin.80.pid',
+              :logfile => 'log/thin.80.log',
+              :filesuffix => '.80',
               :group => 'root',
               :env => 'production',
               :stopcommand => '/etc/init.d/thin stop',
