@@ -18,8 +18,8 @@ PARAMS = {
               :stopcommand => '/etc/init.d/thin stop',
               :startcommand => '/etc/init.d/thin start'
             },
-  :thindev => { :pidfile => 'tmp/pids/thin.80.pid',
-                :logfile => 'log/thin.80.log',
+  :thindev => { :pidfile => 'tmp/pids/thindev.80.pid',
+                :logfile => 'log/thindev.80.log',
                 :filesuffix => '.80',
                 :group => 'wheel',
                 :env => 'development',
